@@ -12,7 +12,9 @@
 
 <b><i><u>NOTE:</b></i></u> Please note that the use of selenium and webdriver-manager to automate trading is against the terms and conditions of most of the trading platform and it is illegal, it is recommended not to use it. Additionally, it is important to note that the performance of a trading bot is highly dependent on market conditions, and the use of any trading strategy or bot carries a risk of financial loss. Therefore, It is recommended to conduct your own research and testing before deploying any bot into live trading. It is important to consult with a financial advisor before making any investment decisions. </br></br>
 
-### Replace the following key/value pairs with your API key + access token values:</br>
+TD Ameritrade API setup link to create API key + access token: https://developer.tdameritrade.com/content/getting-started
+
+### Replace the following key/value pairs with your API key + access token values:
 
 <b><i>"apiKey": "enter your tdameritrade api key",</b></i></br>
 <b><i>"accessToken": "enter your tdameritrade access token"</b></i>
