@@ -1,4 +1,22 @@
 import pandas as pd
+import requests
+
+# Define the endpoint URL
+url = 'https://api.tdameritrade.com/v1/marketdata/{}/pricehistory'.format(symbol)
+
+# Define the query parameters
+params = {'apikey': 'YOUR_API_KEY',
+          'periodType': 'day',
+          'frequencyType': 'minute',
+          'frequency': '1',
+          'startDate': '2021-01-01',
+          'endDate': '2021-01-31'}
+
+# Send the GET request to the endpoint
+response = requests.get(url, params=params)
+
+# Print the response
+print(response.json())
 
 # Load sample data into a pandas DataFrame
 data = {'Date': ['2021-01-01', '2021-01-02', '2021-01-03', '2021-01-04', '2021-01-05'],
